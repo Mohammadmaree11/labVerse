@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+
+/* Tailwind CSS Configuration */
+@theme {
+    /* Colors */
+    --color-Primary: #005C55;
+    --color-Secondary: #FFC800;
+    --color-Bluer: #76DCFF;
+    --color-tertiary: #945D00;
+    --color-quaternary: #006077;
+    --color-Background: #FAF8FF;
+    --color-paragraph: #3E4947;
+    --color-softPeriwinkle: #F2F3FF;
+    --color-lightPeriwinkle: #DAE2FD;
+
+
+    /* Fonts */
+    --font-inter: "Inter", sans-serif;
+    --font-manrope: "Manrope";
+
+}
+
+@layer base {
+    body {
+        background-color: var(--color-Background);
+        font-family: var(--font-manrope);
+    }
+   .container{
+        @apply mx-auto;
+        @apply px-5;
+     
+      
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-manrope);
+    }
+
+    h1 {
+        font-size: 3.75rem;
+        line-height: 4.5rem;
+        font-weight: 800;
+   
+         
+ }
+    h2 {
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        font-weight:700;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 600;
+    }
+
+    p {
+        font-family: var(--font-inter);
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        color: var(--color-paragraph);
+    }
+
+    .navbar .nav-link {
+        position: relative;
+
+    }
+
+    .nav-link::after {
+        content: " ";
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        height: 2px;
+        width: 0;
+        background-color: var(--color-Primary);
+        transition: .9s;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+}
+
+@utility row {
+    @apply flex items-center
+}
+
+@utility nav-link {
+    @apply font-normal text-base text-paragraph leading-6 hover:scale-110 hover:text-Primary transition-all duration-500 inline-block
+}
+@utility inline-row {
+    @apply inline-flex items-center;
+}
