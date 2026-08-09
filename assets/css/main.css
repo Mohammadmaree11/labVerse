@@ -13,6 +13,7 @@
     --color-paragraph: #3E4947;
     --color-softPeriwinkle: #F2F3FF;
     --color-lightPeriwinkle: #DAE2FD;
+    --color-lightBlue: #A3FAEF;
 
 
     /* Fonts */
@@ -97,4 +98,7 @@
 }
 @utility inline-row {
     @apply inline-flex items-center;
+}
+@utility grid-response {
+    @apply grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 pt-6
 }
