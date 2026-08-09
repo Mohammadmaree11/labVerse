@@ -15,6 +15,7 @@
     --color-lightPeriwinkle: #DAE2FD;
     --color-lightBlue: #A3FAEF;
     --color-darkblue: #283044;
+    --color-lightGrey: #6E7977;
 
     /* Fonts */
     --font-inter: "Inter", sans-serif;
@@ -100,5 +101,5 @@
     @apply inline-flex items-center;
 }
 @utility grid-response {
-    @apply grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 pt-6
+    @apply grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 
 }
