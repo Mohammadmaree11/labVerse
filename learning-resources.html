@@ -1,11 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Learning Resources </title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+    <!-- tailwind css 4.3 -->
+    <link rel="stylesheet" href="./assets/css/output.css">
 </head>
+
 <body>
-    
+    <!--? Start Header Section -->
+    <header class="header py-[17.5px] shadow-md ">
+        <div class="row px-6  container items-center   justify-between">
+            <div class="menu block lg:hidden">
+                <img src="./assets/images/header/menu.svg" class="w-6 h-6" alt="menu">
+            </div>
+            <!--? Start Logo Section -->
+            <div class="logo">
+                <a class="text-Primary font-bold text-xl leading-7 font-manrope hover:text-Secondary "
+                    href="index.html">LabVerse</a>
+            </div>
+            <!--? End Logo Section -->
+            <!--? Start List Section -->
+            <nav class="list hidden lg:row">
+                <ul class="row gap-8">
+                    <li><a href="index.html" class="active nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="learning-resources.html" class="nav-link">Learning Resources</a></li>
+                    <li><a href="practice-cases.html" class="nav-link">Practice Cases</a></li>
+                </ul>
+            </nav>
+            <!--? End List Section -->
+            <!--? Start Icons Section -->
+            <div class="icons">
+                <ul class="row gap-6.5 ">
+                    <li class="hidden md:row"><a href="#"><img src="./assets/images/header/favorite.svg"
+                                class="hover:animate-bounce hover:scale-125 duration-400  " alt="Favorite Icon"></a>
+                    </li>
+                    <li class="hidden md:row"><a href="#"><img src="./assets/images/header/store.svg"
+                                class="hover:animate-bounce hover:scale-125 duration-400 " alt="Store Icon"></a></li>
+                    <li><a href="#"
+                          class="text-Primary font-bold border border-Primary py-2 px-5 rounded-3xl  hover:bg-Primary hover:text-white duration-400 hover:shadow-md hover:shadow-Primary hover:scale-105 hover:animate-pulse  transition-all">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!--? End Icons Section -->
+        </div>
+    </header>
+    <!--? End Header Section -->
+    <!--? Start Main Section -->
+    <main>
+        <!--? Start Hero Section -->
+        <section class="hero py-24">
+            <div class="row container mx-auto   flex-col md:flex-row">
+                <div class="">
+                    <div class="row gap-2  mb-6">
+                        <a href="index.html"><span class="text-lightGrey text-sm font-bold">Home</span></a>
+                        <p class="text-lightGrey">></p>
+                        <span class="text-Primary text-sm font-bold">Learning Resources</span>
+                    </div>
+                    <h1 class="mb-6">
+                        Explore Learning Resources
+                    </h1>
+                    <p class="">Access our comprehensive library of medical laboratory courses, practical
+                        guides, and specialized modules designed for precision learning.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+        <!--? End Hero Section -->
+        <!--? Start Learning Resources Section -->
+        <section class="learning-resources py-6">
+            <div class="container">
+                <form action="" class="bg-Background p-5 border rounded-xl">
+                    <div class="row gap-4 flex-col md:flex-row ">
+                        <div class="row w-full  md:flex-1  gap-2 border  py-3 px-4 rounded-lg ">
+                            <img src="./assets/images/learning resources file/search.svg" class="w-6 h-6" alt="search">
+                            <input type="search" placeholder="Search courses, topics, or keywords..."
+                                class="bg-transparent outline-none border-none shadow-none  focus:outline-none w-full   ">
+                        </div>
+                        <!--? <<<<<<<<<<<<1>>>>>>>>>>> -->
+                        <select
+                            class="border w-full md:w-auto border-lightGrey rounded-lg py-3 px-4 bg-transparent outline-none">
+                            <option>All Specialties</option>
+                            <option>Hematology</option>
+                            <option>Chemistry</option>
+                            <option>Microbiology</option>
+                            <option>Coagulation</option>
+                        </select>
+                        <!--? <<<<<<<<<<<<2>>>>>>>>>>> -->
+                        <select
+                            class="border border-lightGrey rounded-lg py-3 px-4 bg-transparent outline-none w-full md:w-auto">
+                            <option>Any Level</option>
+                            <option>Beginner</option>
+                            <option>Intermediate</option>
+                            <option>Advanced</option>
+                        </select>
+                        <button class="row gap-2 w-full md:w-auto  border border-lightGrey rounded-lg h-12 px-4  hover:animate-pulse  duration-400">
+                            <img src="./assets/images/learning resources file/filter.svg" class="w-6 h-6  "
+                                alt="filter icon">
+                            <span >Filter</span>
+                        </button>
+                    </div>
+                </form>
+                <!--? Start learning Section -->
+                <div class="learning py-20">
+                    <div class="container">
+                        <div class="grid-response ">
+                            <!--? <<<<<<<<<<<<1>>>>>>>>>>> -->
+                            <div
+                                class="relative border rounded-3xl flex flex-col h-full overflow-hidden transition-all duration-500 hover:scale-105">
+                                <img src="./assets/images/learning resources file/advanced-peripheral.webp"
+                                    alt="Advanced Peripheral Blood Smear Analysis" class="w-full h-48 object-cover">
+                                <span
+                                    class="absolute top-2 left-2 bg-greenBlue text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                    Hematology
+                                </span>
+                                <div class="p-3 flex-1">
+                                    <h3 class="mb-2 mt-4">Advanced Peripheral Blood Smear Analysis</h3>
+                                    <p>Master the identification of complex morphological abnormalities in red and white
+                                        blood cells.</p>
+                                </div>
+                                <div class="border-t border-lightPeriwinkle"></div>
+                                <div class="row justify-between p-4">
+                                    <div class="row gap-2">
+                                        <img src="assets/images/learning resources file/star.svg" alt="star icon">
+                                        <span class="text-tertiary">4.9</span>
+                                    </div>
+                                    <p class="text-Primary">Beginner</p>
+                                </div>
+                            </div>
+                            <!--? <<<<<<<<<<<<2>>>>>>>>>>> -->
+                            <div
+                                class="relative border rounded-3xl flex flex-col h-full  overflow-hidden transition-all duration-500 hover:scale-105">
+                                <img src="./assets/images/learning resources file/gram-stain.webp"
+                                    alt="Gram Stain Interpretation Protocols" class="w-full h-48 object-cover">
+                                <span
+                                    class="absolute top-2 left-2 bg-whiteBlue text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                    Microbiology
+                                </span>
+                                <div class="p-3 flex-1">
+                                    <h3 class="mb-2 mt-4">Gram Stain Interpretation Protocols</h3>
+                                    <p>Essential techniques for differentiating
+                                        Gram-positive and Gram-negative
+                                        organisms in clinical specimens.</p>
+                                </div>
+                                <div class="border-t border-lightPeriwinkle"></div>
+                                <div class="row justify-between p-4">
+                                    <div class="row gap-2">
+                                        <img src="assets/images/learning resources file/star.svg" alt="star icon">
+                                        <span class="text-tertiary">4.9</span>
+                                    </div>
+                                    <p class="text-Primary">Beginner</p>
+                                </div>
+                            </div>
+                            <!--? <<<<<<<<<<<<3>>>>>>>>>>> -->
+                            <div
+                                class="relative border rounded-3xl flex flex-col h-full  overflow-hidden transition-all duration-500 hover:scale-105">
+                                <img src="./assets/images/learning resources file/enzyme-kinetics.webp" alt="Enzyme Kinetics in Liver
+Function" class="w-full h-48 object-cover">
+                                <span
+                                    class="absolute top-2 left-2 bg-golden text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                    Clinical Chemistry
+                                </span>
+                                <div class="p-3 flex-1">
+                                    <h3 class="mb-2 mt-4">Enzyme Kinetics in Liver
+                                        Function</h3>
+                                    <p>Understanding AST , ALT , and ALP
+                                        markers and their clinical significance
+                                        in diagnosing hepatic pathologies .</p>
+                                </div>
+                                <div class="border-t border-lightPeriwinkle"></div>
+                                <div class="row justify-between p-4">
+                                    <div class="row gap-2">
+                                        <img src="assets/images/learning resources file/star.svg" alt="star icon">
+                                        <span class="text-tertiary">4.7</span>
+                                    </div>
+                                    <p class="text-Primary">Intermediate</p>
+                                </div>
+                            </div>
+                            <!--? <<<<<<<<<<<<4>>>>>>>>>>> -->
+                            <div
+                                class="relative border rounded-3xl flex flex-col h-full  overflow-hidden transition-all duration-500 hover:scale-105">
+                                <img src="./assets/images/learning resources file/autoimmune-disorder.jpg"
+                                    alt=">Autoimmune Disorder Biomarkers" class="w-full h-48 object-cover">
+                                <span
+                                    class="absolute top-2 left-2 bg-lightPeriwinkle text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                    Clinical Chemistry
+                                </span>
+                                <div class="p-3 flex-1">
+                                    <h3 class="mb-2 mt-4">Autoimmune Disorder
+                                        Biomarkers</h3>
+                                    <p>Comprehensive review of ANA
+                                        patterns and their correlation with
+                                        specific systemic autoimmune…</p>
+                                </div>
+                                <div class="border-t border-lightPeriwinkle"></div>
+                                <div class="row justify-between p-4">
+                                    <div class="row gap-2">
+                                        <img src="assets/images/learning resources file/star.svg" alt="star icon">
+                                        <span class="text-tertiary">4.9</span>
+                                    </div>
+                                    <p class="text-Primary">Advanced</p>
+                                </div>
+                            </div>
+
+                            <!--? <<<<<<<<<<<<5>>>>>>>>>>> -->
+                            <div
+                                class="relative border rounded-3xl flex flex-col h-full overflow-hidden transition-all duration-500 hover:scale-105">
+                                <img src="./assets/images/learning resources file/coagulation .webp"
+                                    alt="Coagulation Cascade Fundamentals" class="w-full h-48 object-cover">
+                                <span
+                                    class="absolute top-2 left-2 bg-greenBlue text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                    Hematology
+                                </span>
+                                <div class="p-3 flex-1">
+                                    <h3 class="mb-2 mt-4">Coagulation Cascade
+                                        Fundamentals</h3>
+                                    <p>A deep dive into intrinsic and extrinsic
+                                        pathways, PT, aPTT testing, and
+                                        factor deficiencies.</p>
+                                </div>
+                                <div class="border-t border-lightPeriwinkle"></div>
+                                <div class="row justify-between p-4">
+                                    <div class="row gap-2">
+                                        <img src="assets/images/learning resources file/star.svg" alt="star icon">
+                                        <span class="text-tertiary">4.6</span>
+                                    </div>
+                                    <p class="text-Primary">Intermediate</p>
+                                </div>
+                            </div>
+                            <!--? <<<<<<<<<<<<6>>>>>>>>>>> -->
+                            <div
+                                class="relative border rounded-3xl flex flex-col h-full  overflow-hidden transition-all duration-500 hover:scale-105">
+                                <img src="./assets/images/learning resources file/quality.webp"
+                                    alt="Quality Control in Automation" class="w-full h-48 object-cover">
+                                <span
+                                    class="absolute top-2 left-2 bg-whiteBlue text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                    Clinical Chemistry
+                                </span>
+                                <div class="p-3 flex-1">
+                                    <h3 class="mb-2 mt-4">Quality Control in
+                                        Automation</h3>
+                                    <p>Implementing and interpreting Levey-
+                                        Jennings charts to maintain precision
+                                        in high-throughput labs.</p>
+                                </div>
+                                <div class="border-t border-lightPeriwinkle"></div>
+                                <div class="row justify-between p-4">
+                                    <div class="row gap-2">
+                                        <img src="assets/images/learning resources file/star.svg" alt="star icon">
+                                        <span class="text-tertiary">5.0</span>
+                                    </div>
+                                    <a href="#" class="text-Primary">Advanced</a>
+                                </div>
+                            </div>
+                            <!--? <<<<<<<<<<<<7>>>>>>>>>>> -->
+                            <div
+                                class="relative border rounded-3xl flex flex-col h-full  overflow-hidden transition-all duration-500 hover:scale-105">
+                                <img src="./assets/images/learning resources file/antimicrobial.webp" alt="Antimicrobial
+Susceptibility Testing" class="w-full h-48 object-cover">
+                                <span
+                                    class="absolute top-2 left-2 bg-golden text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                    Microbiology
+                                </span>
+                                <div class="p-3 flex-1">
+                                    <h3 class="mb-2 mt-4">Antimicrobial
+                                        Susceptibility Testing</h3>
+                                    <p>Interpreting MIC panels and
+                                        understanding mechanisms of
+                                        resistance in common pathogens.</p>
+                                </div>
+                                <div class="border-t border-lightPeriwinkle"></div>
+                                <div class="row justify-between p-4">
+                                    <div class="row gap-2">
+                                        <img src="assets/images/learning resources file/star.svg" alt="star icon">
+                                        <span class="text-tertiary">4.8</span>
+                                    </div>
+                                    <p class="text-Primary">Intermediate</p>
+                                </div>
+                            </div>
+                            <!--? <<<<<<<<<<<<8>>>>>>>>>>> -->
+                            <div
+                                class="relative border rounded-3xl flex flex-col h-full  overflow-hidden transition-all duration-500 hover:scale-105">
+                                <img src="./assets/images/learning resources file/PCR.webp"
+                                    alt=">Autoimmune Disorder Biomarkers" class="w-full h-48 object-cover">
+                                <span
+                                    class="absolute top-2 left-2 bg-lightPeriwinkle text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                    Molecular
+                                </span>
+                                <div class="p-3 flex-1">
+                                    <h3 class="mb-2 mt-4">PCR Troubleshooting
+                                        Workshop</h3>
+                                    <p>Identify and resolve common issues
+                                        causing false positives, false
+                                        negatives, or amplification failure.</p>
+                                </div>
+                                <div class="border-t border-lightPeriwinkle"></div>
+                                <div class="row justify-between p-4">
+                                    <div class="row gap-2">
+                                        <img src="assets/images/learning resources file/star.svg" alt="star icon">
+                                        <span class="text-tertiary">4.7</span>
+                                    </div>
+                                    <p class="text-Primary">Advanced</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--? End Learning Resources Section -->
+
+        <!--? Start learning Section -->
+        <section class="learning py-20">
+            <div class="container">
+                <h2 class="mb-9 border-b border-gray-400  ">Recommended for You : </h2>
+
+                <div class="grid-response ">
+                    <!--? <<<<<<<<<<<<1>>>>>>>>>>> -->
+                    <div
+                        class=" border rounded-3xl flex flex-col h-full overflow-hidden transition-all duration-500 hover:scale-105">
+                        <img src="./assets/images/recommended file/urinalysis.webp"
+                            alt="Urinalysis Sediment Recognition" class="w-full h-48 object-cover">
+                        <div class="p-2 flex-1">
+                            <h3 class="mb-2 mt-4">Urinalysis Sediment Recognition</h3>
+                            <p>Quick guide to identifying common casts and
+                                crystals.</p>
+                        </div>
+                        <a href=""
+                            class="inline-row bg-Primary text-Background font-medium py-6 px-4  hover:bg-softPeriwinkle hover:text-Primary transition-colors duration-300  ">
+                            <span>Start Module</span>
+                            <img src="./assets/images/interactive-preview/arrow.svg" alt="Arrow" class="ml-2" />
+                        </a>
+                    </div>
+                    <!--? <<<<<<<<<<<<2>>>>>>>>>>> -->
+                    <div
+                        class=" border rounded-3xl flex flex-col h-full overflow-hidden transition-all duration-500 hover:scale-105">
+                        <img src="./assets/images/recommended file/blood.webp" alt="Urinalysis Sediment Recognition"
+                            class="w-full h-48 object-cover">
+                        <div class="p-2 flex-1">
+                            <h3 class="mb-2 mt-4">Blood Bank Case Studies</h3>
+                            <p>Interactive scenarios for resolving complex
+                                antibody panels.</p>
+                        </div>
+                        <a href=""
+                            class="inline-row bg-Primary text-Background font-medium py-6 px-4  hover:bg-softPeriwinkle hover:text-Primary transition-colors duration-300  ">
+                            <span>Start Module</span>
+                            <img src="./assets/images/interactive-preview/arrow.svg" alt="Arrow" class="ml-2" />
+                        </a>
+                    </div>
+                    <!--? <<<<<<<<<<<<3>>>>>>>>>>> -->
+                    <div
+                        class=" border rounded-3xl flex flex-col h-full overflow-hidden transition-all duration-500 hover:scale-105">
+                        <img src="./assets/images/recommended file/lab.webp" alt="Lab Safety & Compliance"
+                            class="w-full h-48 object-cover">
+                        <div class="p-2 flex-1">
+                            <h3 class="mb-2 mt-4">Lab Safety & Compliance</h3>
+                            <p>Annual review of essential laboratory safety
+                                protocols.</p>
+                        </div>
+                        <a href=""
+                            class="inline-row bg-Primary text-Background font-medium py-6 px-4  hover:bg-softPeriwinkle hover:text-Primary transition-colors duration-300  ">
+                            <span>Start Module</span>
+                            <img src="./assets/images/interactive-preview/arrow.svg" alt="Arrow" class="ml-2" />
+                        </a>
+                    </div>
+                    <!--? <<<<<<<<<<<<4>>>>>>>>>>> -->
+                    <div
+                        class=" border rounded-3xl flex flex-col h-full overflow-hidden transition-all duration-500 hover:scale-105">
+                        <img src="./assets/images/recommended file/method.webp" alt="Method Validation Basics"
+                            class="w-full h-48 object-cover">
+                        <div class="p-2 flex-1">
+                            <h3 class="mb-2 mt-4">Method Validation Basics</h3>
+                            <p>Statistical tools for introducing new assays
+                                into the clinical lab.</p>
+                        </div>
+                        <a href=""
+                            class="inline-row bg-Primary text-Background font-medium py-6 px-4  hover:bg-softPeriwinkle hover:text-Primary transition-colors duration-300  ">
+                            <span>Start Module</span>
+                            <img src="./assets/images/interactive-preview/arrow.svg" alt="Arrow" class="ml-2" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--? End Main Section -->
+    <!--? Start Footer Section -->
+    <footer class="footer py-24 bg-darkblue">
+        <div class="container">
+            <div class="grid-response gap-6">
+                <!--? <<<<<<<<<<<<1>>>>>>>>>>> -->
+                <div class="w-full   ">
+                    <h3 class="text-lightPeriwinkle mb-4 text-4xl">LabVerse</h3>
+                    <p class="text-lightPeriwinkle text-xl font-normal md:text-2xl xl:text-sm  ">© 2024 LabVerse Medical
+                        Education.
+                        All rights reserved.</p>
+                </div>
+                <!--? <<<<<<<<<<<<2>>>>>>>>>>> -->
+                <div class="hidden xl:block">
+                    <ul class="gap-4 row flex-col">
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Hematology</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Microbiology</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Clinical
+                                Chemistry</a></li>
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Immunology</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--? <<<<<<<<<<<<3>>>>>>>>>>> -->
+                <div class="hidden xl:block">
+                    <ul class="gap-4 row flex-col">
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Student
+                                Dashboard</a></li>
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Faculty
+                                Portal</a></li>
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Institutional
+                                Access</a></li>
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Academic
+                                Partners</a></li>
+                    </ul>
+                </div>
+                <!--? <<<<<<<<<<<<4>>>>>>>>>>> -->
+                <div class="hidden xl:block">
+                    <ul class="gap-4 row flex-col">
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Terms
+                                of Service</a></li>
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Privacy
+                                Policy</a></li>
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Contact
+                                Support</a></li>
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Help
+                                Center</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--? End Footer Section -->
 </body>
+
 </html>

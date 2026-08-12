@@ -16,6 +16,9 @@
     --color-lightBlue: #A3FAEF;
     --color-darkblue: #283044;
     --color-lightGrey: #6E7977;
+    --color-greenBlue: #80D5CBE5;
+    --color-golden: #FFB95FE5;
+    --color-whiteBlue: #6CD3F7E5;
 
     /* Fonts */
     --font-inter: "Inter", sans-serif;
@@ -28,12 +31,7 @@
         background-color: var(--color-Background);
         font-family: var(--font-manrope);
     }
-   .container{
-        @apply mx-auto;
-        @apply px-5;
-     
-      
-    }
+  
     h1,
     h2,
     h3,
@@ -102,4 +100,7 @@
 }
 @utility grid-response {
     @apply grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 
+}
+@utility container {
+    @apply mx-auto px-8;
 }
