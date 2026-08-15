@@ -19,6 +19,8 @@
     --color-greenBlue: #80D5CBE5;
     --color-golden: #FFB95FE5;
     --color-whiteBlue: #6CD3F7E5;
+    --color-redError: #BA1A1A;
+    --color-whiteGrey: #E2E7FF;
 
     /* Fonts */
     --font-inter: "Inter", sans-serif;

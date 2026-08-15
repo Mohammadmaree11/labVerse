@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="../assets/css/output.css">
 </head>
 
-<body>
+<body class="bg-softPeriwinkle">
     <!--? Start Header Section -->
-    <header class="header py-[17.5px] shadow-md ">
+    <header class="header py-[17.5px] shadow-md  ">
         <div class="row px-6  container items-center   justify-between">
             <div class="menu block lg:hidden">
                 <img src="../assets/images/index file/header/Menu.svg" class="w-6 h-6" alt="menu">
@@ -41,10 +41,10 @@
             <!--? Start Icons Section -->
             <div class="icons">
                 <ul class="row gap-3 ">
-                    <li class="hidden md:row"><a href="#"><img src="../assets/images/index file/header/favorite.svg"
+                    <li class="hidden md:row"><a href="./wishlist.html"><img src="../assets/images/index file/header/favorite.svg"
                                 class="hover:animate-bounce hover:scale-125 duration-400  " alt="Favorite Icon"></a>
                     </li>
-                    <li class="hidden "><a href="#"><img src="../assets/images/header/store.svg"
+                    <li class="hidden "><a href="./cart.html"><img src="../assets/images/header/store.svg"
                                 class="hover:animate-bounce hover:scale-125 duration-400 " alt="Store Icon"></a></li>
                     <li><a href="#"
                             class="text-Primary hidden font-bold border border-Primary py-2 px-5 rounded-3xl  hover:bg-Primary hover:text-white duration-400 hover:shadow-md hover:shadow-Primary hover:scale-105 hover:animate-pulse  transition-all">Login</a>
@@ -58,24 +58,198 @@
     <!--? End Header Section -->
     <!--? Start Main Section -->
     <main>
+        <!--? Start Cart Section -->
         <section class="cart py-24">
             <div class="container">
-                <div class="row justify-between border-b py-4">
+                <div class="row justify-between border-b py-4 mb-20">
                     <h2 class="text-3xl font-bold">Your Cart</h2>
                     <p><span>2</span> Items</p>
                 </div>
-                <div class="">
-                    <div class="">
-                        <!--? <<<<<<<<<<<<1>>>>>>>>>>> -->
-                        <div class=""></div>
-                        <!--? <<<<<<<<<<<<2>>>>>>>>>>> -->
-                        <div class=""></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 xl:grid-cols-3">
+                    <!--? Cart Section -->
+                    <div class="flex flex-col gap-4 md:col-span-2">
+                        <!--? <<<<<<<1>>>>> -->
+                        <div class="flex w-full flex-col gap-4 rounded-lg border border-lightGrey
+                   bg-Background p-4 shadow-xl sm:flex-row sm:items-center">
+                            <img src="../assets/images/cart file/Advanced.webp" alt="Advanced Hematology Module"
+                                class="h-32 w-full rounded-lg object-cover sm:w-48 shrink-0">
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-start justify-between gap-4 px-4 py-1">
+                                    <h3>Advanced Hematology Module</h3>
+                                    <span class="shrink-0 font-bold text-Primary">$149.00</span>
+                                </div>
+                                <p class="mt-2 mb-3 px-4 py-1 text-sm font-normal">
+                                    Comprehensive guide to blood cell morphology and automated
+                                    analyzer principles.
+                                </p>
+                                <button class="row w-fit cursor-pointer gap-1 rounded-2xl border
+                           px-4 py-2 transition-all duration-500
+                           hover:scale-105 hover:shadow-md hover:shadow-Primary">
+                                    <img src="../assets/images/cart file/remove.svg" alt="Delete" class="h-4 w-4">
+                                    <span class="text-sm font-bold text-redError">Remove</span></button>
+                            </div>
+                        </div>
+                        <!--? <<<<<<<2>>>>> -->
+                        <div class="flex w-full flex-col gap-4 rounded-lg border border-lightGrey
+                   bg-Background p-4 shadow-xl sm:flex-row sm:items-center">
+                            <img src="../assets/images/cart file/Clinical.webp" alt="Clinical Microbiology Case Studies"
+                                class="h-32 w-full rounded-lg object-cover sm:w-48 shrink-0">
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-start justify-between gap-4 px-4 py-1">
+                                    <h3>Clinical Microbiology Case Studies</h3>
+                                    <span class="shrink-0 font-bold text-Primary">$89.00</span>
+                                </div>
+                                <p class="mt-2 mb-3 px-4 py-1 text-sm font-normal">
+                                    Interactive diagnostic scenarios for identifying common
+                                    and rare pathogens.
+                                </p>
+                                <button class="row w-fit cursor-pointer gap-1 rounded-2xl border
+                           px-4 py-2 transition-all duration-500
+                           hover:scale-105 hover:shadow-md hover:shadow-Primary">
+                                    <img src="../assets/images/cart file/remove.svg" alt="Delete" class="h-4 w-4">
+                                    <span class="text-sm font-bold text-redError">
+                                        Remove
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class=""></div>
+                    <!--? Order Summary Section -->
+                    <div class="  rounded-lg border border-lightGrey bg-Background px-5 py-6 shadow-xl">
+                        <h3 class="border-b pb-4">Order Summary</h3>
+                        <div class="row justify-between py-3">
+                            <span>Subtotal</span>
+                            <span>$238.00</span>
+                        </div>
+                        <div class="row justify-between gap-4 border-b pb-4">
+                            <span>Tax</span>
+                            <span class="text-right">Calculated at checkout</span>
+                        </div>
+                        <div class="row justify-between py-4">
+                            <span class="font-bold">Total</span>
+                            <span class="font-bold text-2xl leading-9 text-Primary"> $238.00
+                            </span>
+                        </div>
+                        <a href="#" class="block w-full rounded-lg bg-Primary px-6 py-3 text-center text-sm font-semibold text-white transition-all duration-500
+                   hover:scale-105 hover:shadow-md hover:shadow-Primary">Proceed to Checkout</a>
+                        <div class="row justify-center gap-2 mt-4">
+                            <img src="../assets/images/cart file/Secure.svg" alt="Secure transaction" class="h-4 w-4">
+                            <span class="text-sm leading-5">Secure transaction </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <!--? End Cart Section -->
+        <div class="border-b py-4 mb-20 container"></div>
+        <div class="border-b py-4 mb-20 container"></div>
+        <!--? Start learning Section -->
+        <section class="learning py-20">
+            <div class="container">
+                <h3 class="mb-9   ">Frequently Bought Together : </h3>
+                <div class="grid-response ">
+                    <!--? <<<<<<<<<<<<1>>>>>>>>>>> -->
+                    <div
+                        class=" border rounded-3xl flex flex-col h-full overflow-hidden transition-all duration-500 hover:scale-105">
+                        <img src="../assets/images/cart file/Frequently/Enzymology.webp" alt="Enzymology Basics"
+                            class="w-full h-48 object-cover">
+                        <div class="p-4 flex-1">
+                            <span class="text-quaternary bg-whiteGrey py-1 px-2 rounded-sm    ">Chemistry</span>
+                            <h3 class="mb-2 mt-4">Enzymology Basics</h3>
+                        </div>
+                        <div class="row justify-between p-4">
+                            <span class=" text-Primary">$45.00</span>
+                            <a href="#"><img src="../assets/images/cart file/Frequently/cart.svg" alt="Verified"
+                                    class="h-4 w-4"></a>
+                        </div>
+                    </div>
+                    <!--? <<<<<<<<<<<<2>>>>>>>>>>> -->
+                    <div
+                        class=" border rounded-3xl flex flex-col h-full overflow-hidden transition-all duration-500 hover:scale-105">
+                        <img src="../assets/images/cart file/Frequently/Autoimmune.webp" alt="Enzymology Basics"
+                            class="w-full h-48 object-cover">
+                        <div class="p-4 flex-1">
+                            <span class="text-quaternary bg-whiteGrey py-1 px-2 rounded-sm">Immunology</span>
+                            <h3 class="mb-2 mt-4">Autoimmune Diagnostics</h3>
+                        </div>
+                        <div class="row justify-between p-4">
+                            <span class=" text-Primary">$60.00</span>
+                            <a href="#"><img src="../assets/images/cart file/Frequently/cart.svg" alt="Verified"
+                                    class="h-4 w-4"></a>
+                        </div>
+                    </div>
+                    <!--? <<<<<<<<<<<<3>>>>>>>>>>> -->
+                    <div
+                        class=" border rounded-3xl flex flex-col h-full overflow-hidden transition-all duration-500 hover:scale-105">
+                        <img src="../assets/images/cart file/Frequently/PCR.webp" alt="Enzymology Basics"
+                            class="w-full h-48 object-cover">
+                        <div class="p-4 flex-1">
+                            <span class="text-quaternary bg-whiteGrey py-1 px-2 rounded-sm">Molecular</span>
+                            <h3 class="mb-2 mt-4">PCR Techniques Workshop</h3>
+                        </div>
+                        <div class="row justify-between p-4">
+                            <span class=" text-Primary">$75.00</span>
+                            <a href="#"><img src="../assets/images/cart file/Frequently/cart.svg" alt="Verified"
+                                    class="h-4 w-4"></a>
+                        </div>
+                    </div>
+                    <!--? <<<<<<<<<<<<4>>>>>>>>>>> -->
+                    <div
+                        class=" border rounded-3xl flex flex-col h-full overflow-hidden transition-all duration-500 hover:scale-105">
+                        <img src="../assets/images/cart file/Frequently/Lab.webp" alt="Enzymology Basics"
+                            class="w-full h-48 object-cover">
+                        <div class="p-4 flex-1">
+                            <span class="text-quaternary bg-whiteGrey py-1 px-2 rounded-sm ">Operations</span>
+                            <h3 class="mb-2 mt-4">Lab Quality Control</h3>
+                        </div>
+                        <div class="row justify-between p-4">
+                            <span class=" text-Primary">$30.00</span>
+                            <a href="#"><img src="../assets/images/cart file/Frequently/cart.svg" alt="Verified"
+                                    class="h-4 w-4"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--? End learning Section -->
+        <div class="border-b py-4 mb-20 container"></div>
+        <!--? Start Core Values Section -->
+        <section class="core-values py-24 bg-softPeriwinkle">
+            <div class="container">
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 pt-6 ">
+                    <!--? <<<<<<<<<<1>>>>>>>>>>>-->
+                    <div class=" p-6 text-center hover:scale-80 transition-all duration-500">
+                        <img src="../assets/images/cart file/core/Verified .svg" class=" inline-block"
+                            alt="Verified Content">
+                        <h3 class="mb-2 mt-4">Verified Content</h3>
+                        <p class="font-normal text-sm leading-5">Authored by certified experts</p>
+                    </div>
+                    <!--? <<<<<<<<<<2>>>>>>>>>>>-->
+                    <div class=" p-6 text-center hover:scale-80 transition-all duration-500">
+                        <img src="../assets/images/cart file/core/Lifetime.svg" class=" inline-block"
+                            alt="Lifetime Access">
+                        <h3 class="mb-2 mt-4">Lifetime Access</h3>
+                        <p class="font-normal text-sm leading-5">Learn at your own pace</p>
+                    </div>
+                    <!--? <<<<<<<<<<3>>>>>>>>>>>-->
+                    <div class=" p-6 text-center hover:scale-80 transition-all duration-500">
+                        <img src="../assets/images/cart file/core/Updates.svg" class=" inline-block" alt="Free Updates">
+                        <h3 class="mb-2 mt-4">Free Updates</h3>
+                        <p class="font-normal text-sm leading-5">Stay current with guidelines</p>
+                    </div>
+                    <!--? <<<<<<<<<<4>>>>>>>>>>>-->
+                    <div class=" p-6 text-center hover:scale-80 transition-all duration-500">
+                        <img src="../assets/images/cart file/core/Support.svg" class=" inline-block" alt="24/7 Support">
+                        <h3 class="mb-2 mt-4">24/7 Support</h3>
+                        <p class="font-normal text-sm leading-5">Dedicated academic help</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--? End Core Values Section -->
     </main>
+
     <!--? End Main Section -->
     <!--? Start Footer Section -->
     <footer class="footer py-24 bg-darkblue">
