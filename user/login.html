@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+    <!-- tailwind css 4.3 -->
+    <link rel="stylesheet" href="../assets/css/output.css">
 </head>
+
 <body>
-    
+    <section class=" py-15">
+        <div class="container">
+            <div class="mx-auto grid  border rounded-3xl grid-cols-1 bg-white lg:grid-cols-2">
+                <!--? <<<<<<<1>>>>> -->
+                <div class="flex items-center justify-center p-8 md:p-12">
+                    <div class="w-full max-w-md">
+                        <h2 class="">Welcome Back</h2>
+                        <p class="my-6 text-sm ">Log in to your LabVerse account to access your
+                            educational dashboard and clinical modules.
+                        </p>
+                        <!--? <<<<<<<form>>>>> -->
+                        <form class="flex flex-col gap-4">
+                            <div>
+                                <label for="email" class="cursor-pointer  mb-2 block text-sm font-medium">Email Address</label>
+                                <input id="email" type="email" placeholder="scientist@example.com" class="w-full rounded-lg border border-lightGrey
+                                       px-4 py-3 text-sm outline-none bg-Background
+                                       focus:border-Primary ">
+                            </div>
+                            <div>
+                                <div class="mb-2 row justify-between  ">
+                                    <label for="password" class="cursor-pointer  text-sm font-medium">Password</label>
+                                    <a href="#"
+                                        class="text-xs text-Primary hover:underline hover:underline-offset-4">Forgot
+                                        password?
+                                    </a>
+                                </div>
+                                <div class="row bg-Background rounded-lg border border-lightGrey px-4 ">
+                                    <input id="password" type="password" placeholder="••••••••" class="w-full bg-transparent py-3 text-sm
+                                           outline-none border-none 
+                                          ">
+                                    <img src="../assets/images/login file/hidden.svg" alt="Show password"
+                                        class="h-5 w-5 cursor-pointer">
+                                </div>
+                            </div>
+                            <label class="row cursor-pointer  gap-2 text-sm text-gray-600">
+                                <input type="checkbox" class="h-4 w-4 accent-Primary">
+                                <span>Remember me for 30 days</span>
+                            </label>
+                            <button type="submit" class="w-full rounded-lg bg-Primary py-3
+                                   font-semibold text-white
+                                   transition-all duration-300
+                                   hover:scale-102 hover:bg-Bluer">
+                                Login
+                                <span> →</span>
+                            </button>
+                            <div class="flex items-center gap-3">
+                                <div class="h-px flex-1 bg-lightGrey"></div>
+                                <span class="text-xs font-bold text-gray-500">Or continue with</span>
+                                <div class="h-px flex-1 bg-lightGrey"></div>
+                            </div>
+                            <button type="button" class="row w-full bg-Background justify-center gap-3 rounded-lg border py-3 text-sm font-bold   duration-300
+                                   hover:scale-105 hover:shadow-md hover:shadow-Primary">
+                                <img src="../assets/images/login file/google.svg" alt="Google" class="h-5 w-5">
+                                <span>Continue with Google</span>
+                            </button>
+                            <p class="text-center text-sm text-gray-500">Don't have an account?
+                                <a href="#" class="text-Primary hover:underline hover:text-Secondary">
+                                    Request institutional access
+                                </a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <!--? <<<<<<<2>>>>> -->
+                <div class="bg-Primary/85 rounded-3xl  hidden lg:block">
+                    <div class="container">
+                        <p>"LabVerse has completely
+                            transformed how I
+                            visualize complex
+                            hematology cases. The
+                            digital microscopy
+                            interface is the closest
+                            thing to being in the
+                            actual lab."</p>
+                    </div>
+                    <div class="">
+                        <img src="../assets/images/login file/porsen.svg" alt="Doctor" class=" ">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 </body>
+
 </html>
