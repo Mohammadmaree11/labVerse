@@ -1,11 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>practice-cases</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+    <!-- tailwind css 4.3 -->
+    <link rel="stylesheet" href="./assets/css/output.css">
 </head>
+
 <body>
-    
+    <!--? Start Header Section -->
+    <header class="header py-[17.5px] shadow-md ">
+        <div class="row px-6  container    justify-between">
+            <div class="menu block lg:hidden">
+                <img src="./assets/images/index file/header/Menu.svg" class="w-6 h-6" alt="menu">
+            </div>
+            <!--? Start Logo Section -->
+            <div class="logo">
+                <a class="text-Primary font-bold text-xl leading-7 font-manrope hover:text-Secondary "
+                    href="index.html">LabVerse</a>
+            </div>
+            <!--? End Logo Section -->
+            <!--? Start List Section -->
+            <nav class="list hidden lg:row">
+                <ul class="row gap-8">
+                    <li><a href="index.html" class="active nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="learning-resources.html" class="nav-link">Learning Resources</a></li>
+                    <li><a href="practice-cases.html" class="nav-link">Practice Cases</a></li>
+                </ul>
+            </nav>
+            <!--? End List Section -->
+            <!--? Start Icons Section -->
+            <div class="icons">
+                <ul class="row gap-6.5 ">
+                    <li class="hidden md:row"><a href="user/wishlist.html"><img
+                                src="./assets/images/index file/header/favorite.svg"
+                                class="hover:animate-bounce hover:scale-125 duration-400  " alt="Favorite Icon"></a>
+                    </li>
+                    <li class="hidden md:row"><a href="user/cart.html"><img
+                                src="./assets/images/index file/header/store.svg"
+                                class="hover:animate-bounce hover:scale-125 duration-400 " alt="Store Icon"></a></li>
+                    <li><a href="user/login.html"
+                            class="text-Primary font-bold border border-Primary py-2 px-5 rounded-3xl  hover:bg-Primary hover:text-white duration-400 hover:shadow-md hover:shadow-Primary hover:scale-105 hover:animate-pulse  transition-all">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!--? End Icons Section -->
+        </div>
+    </header>
+    <!--? End Header Section -->
+    <!--? Start Main Section -->
+    <main>
+        <!--? Start Hero Section -->
+        <section class="hero py-24">
+            <div class="row container mx-auto   flex-col md:flex-row">
+                <div class="">
+                    <div class="row gap-2  mb-6">
+                        <a href="index.html"><span class="text-lightGrey text-sm font-bold">Home</span></a>
+                        <p class="text-lightGrey">></p>
+                        <span class="text-Primary text-sm font-bold">Practice Cases </span>
+                    </div>
+                    <h1 class="mb-6">
+                        Practice Cases
+                    </h1>
+                    <p class="">Apply your laboratory knowledge through realistic clinical cases and
+                        diagnostic challenges.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+        <!--? End Hero Section -->
+        <!--? Start Practice Cases Section -->
+        <section class="Practice py-10 bg-softPeriwinkle border container  rounded-xl">
+            <div class="container ">
+
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-3 m-auto">
+                    <!--? <<<<<<<<<<<<1>>>>>>>>>>> -->
+                    <div class="border rounded-lg p-6 text-center bg-Background">
+                        <img src="./assets/images/practice cases file/Completed.svg" class="inline-block"
+                            alt="completed">
+                        <p class="font-bold  mt-3">12</p>
+                        <span class="font-normal text-sm">Cases Completed</span>
+                    </div>
+                    <!--? <<<<<<<<<<<<2>>>>>>>>>>> -->
+                    <div class="border rounded-lg p-6 text-center bg-Background">
+                        <img src="./assets/images/practice cases file/Progress.svg" class="inline-block"
+                            alt="in progress">
+                        <p class="font-bold  mt-3">3</p>
+                        <span class="font-normal text-sm">In Progress</span>
+                    </div>
+                    <!--? <<<<<<<<<<<<3>>>>>>>>>>> -->
+                    <div class="border rounded-lg p-6 text-center bg-Background">
+                        <img src="./assets/images/practice cases file/Average.svg" class="inline-block" alt="average">
+                        <p class="font-bold  mt-3">84%</p>
+                        <span class="font-normal text-sm">Average Score</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--? End Practice Cases Section -->
+        <!--? Start Filter Section -->
+        <section class="py-10">
+            <div class="container">
+                <div class="grid grid-cols-1 gap-8 lg:grid-cols-[280px_1fr]">
+                    <!--? <<<<<<<<<<<<1>>>>>>>>>>> -->
+                    <div class="w-full hidden lg:block max-w-xs space-y-6">
+                        <!--? <<<<<<<1>>>>>>> -->
+                        <div class="rounded-2xl border border-gray-300 bg-white p-5 shadow-sm">
+                            <h3 class="mb-4  text-black">
+                                DISCIPLINE
+                            </h3>
+                            <div class="space-y-3">
+                                <label class="row gap-3">
+                                    <input type="radio" name="discipline" checked class=" accent-Primary">
+                                    <span class="text-black">All Disciplines</span>
+                                </label>
+                                <label class="row gap-3">
+                                    <input type="radio" name="discipline" class=" accent-Primary">
+                                    <span class="text-black">Hematology</span>
+                                </label>
+                                <label class="row gap-3">
+                                    <input type="radio" name="discipline" class=" accent-Primary">
+                                    <span class="text-black">Chemistry</span>
+                                </label>
+                                <label class="row gap-3">
+                                    <input type="radio" name="discipline" class=" accent-Primary">
+                                    <span class="text-black">Microbiology</span>
+                                </label>
+                                <label class="row gap-3">
+                                    <input type="radio" name="discipline" class=" accent-Primary">
+                                    <span class="text-black">Immunology</span>
+                                </label>
+                                <label class="row gap-3">
+                                    <input type="radio" name="discipline" class=" accent-Primary">
+                                    <span class="text-black">Coagulation</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!--? <<<<<<<2>>>>>>> -->
+                        <div class="rounded-2xl border border-gray-300 bg-white p-5 shadow-sm">
+                            <h3 class="mb-4 text-black">
+                                DIFFICULTY
+                            </h3>
+                            <div class="space-y-3">
+                                <label class=" row gap-3">
+                                    <input type="checkbox" checked class=" rounded accent-Primary">
+                                    <span class="text-black">Beginner</span>
+                                </label>
+                                <label class="row gap-3">
+                                    <input type="checkbox" checked class=" rounded accent-Primary">
+                                    <span class="text-black">Intermediate</span>
+                                </label>
+
+                                <label class=" row gap-3">
+                                    <input type="checkbox" class=" rounded accent-Primary">
+                                    <span class="text-black">Advanced</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!--? <<<<<<<3>>>>>>-->
+                        <div class="rounded-2xl border border-gray-300 bg-white p-5 shadow-sm">
+                            <h3 class="mb-4 text-black">
+                                CASE STATUS
+                            </h3>
+                            <div class="space-y-3">
+                                <label class="row gap-3">
+                                    <input type="checkbox" checked class="rounded accent-Primary">
+                                    <span class="text-black">Not Started</span>
+                                </label>
+                                <label class="row gap-3">
+                                    <input type="checkbox" checked class="rounded accent-Primary">
+                                    <span class="text-black">In Progress</span>
+                                </label>
+                                <label class="row gap-3">
+                                    <input type="checkbox" class="rounded accent-Primary">
+                                    <span class="text-black">Completed</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--? <<<<<<<<<<<<filter>>>>>>>>>>> -->
+                    <form action="" class=" lg:hidden bg-Background p-5 border rounded-xl">
+                        <div class="row gap-4 flex-col lg:flex-row ">
+                            <!--? <<<<<<<<<<<<1>>>>>>>>>>> -->
+                            <select
+                                class="border w-full lg:w-auto border-lightGrey rounded-lg py-3 px-4 bg-transparent outline-none">
+                                <option>All Disciplines</option>
+                                <option>Hematology</option>
+                                <option>Chemistry</option>
+                                <option>Microbiology</option>
+                                <option>Immunology</option>
+                                <option>Coagulation</option>
+                            </select>
+                            <!--? <<<<<<<<<<<<2>>>>>>>>>>> -->
+                            <select
+                                class="border border-lightGrey rounded-lg py-3 px-4 bg-transparent outline-none w-full lg:w-auto">
+                                <option selected disabled>Difficulty</option>
+                                <option>Beginner</option>
+                                <option>Intermediate</option>
+                                <option>Advanced</option>
+                            </select>
+                            <!--? <<<<<<<<<<<<3>>>>>>>>>>> -->
+                            <select
+                                class="border border-lightGrey rounded-lg py-3 px-4 bg-transparent outline-none w-full lg:w-auto">
+                                <option selected disabled>Case Status</option>
+                                <option>Not Started</option>
+                                <option>In Progress</option>
+                                <option>In Progress</option>
+                            </select>
+
+                        </div>
+                    </form>
+                    <!--? <<<<<<<<<<<<2>>>>>>>>>>> -->
+                    <div class="learning w-full ">
+                        <div class="container">
+                            <div class="grid grid-cols-1  lg:grid-cols-2 gap-6 ">
+                                <!--? <<<<<<<<<<<<1>>>>>>>>>>> -->
+                                <div
+                                    class="relative border rounded-3xl flex flex-col overflow-hidden transition-all duration-500 hover:scale-105">
+                                    <img src="./assets/images/learning resources file/advanced-peripheral.webp"
+                                        alt="Advanced Peripheral Blood Smear Analysis" class="w-full h-48 object-cover">
+                                    <span
+                                        class="absolute top-2 left-2 bg-greenBlue text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                        Hematology
+                                    </span>
+                                    <div class="p-3 flex-1">
+                                        <div class="row justify-between ">
+                                            <h3 class="mb-2  mt-4">Iron Deficiency
+                                                Anemia</h3>
+                                            <span
+                                                class=" bg-lightPeriwinkle text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                                Beginner </span>
+                                        </div>
+                                        <p class="text-sm">Evaluate a 45-year-old patient presenting with fatigue and
+                                            pallor.…</p>
+                                    </div>
+                                    <div class="border-t border-lightPeriwinkle"></div>
+                                    <div class=" p-4">
+                                        <a
+                                            class="border text-center border-Primary bg-softPeriwinkle text-Primary font-medium py-2.5 w-full inline-block rounded-lg">
+                                            Start Case
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--? <<<<<<<<<<<<2>>>>>>>>>>> -->
+                                <div
+                                    class="relative border rounded-3xl flex flex-col overflow-hidden transition-all duration-500 hover:scale-105">
+                                    <img src="./assets/images/practice cases file/Acute .webp" alt="Acute Leukemia"
+                                        class="w-full h-48 object-cover">
+                                    <span
+                                        class="absolute top-2 left-2 bg-greenBlue text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                        Hematology
+                                    </span>
+                                    <div class="p-3 flex-1">
+                                        <div class="row justify-between ">
+                                            <h3 class="mb-2  mt-4">Acute Leukemia
+                                                Identification</h3>
+                                            <span
+                                                class=" bg-lightPeriwinkle text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                                Advanced </span>
+                                        </div>
+                                        <p class="text-sm">Analyze bone marrow morphology and
+                                            flow cytometry results to classify a…
+                                            suspected acute leukemia presentation.</p>
+                                    </div>
+                                    <div class="border-t border-lightPeriwinkle"></div>
+                                    <div class=" p-4">
+                                        <a
+                                            class="border text-center bg-Primary border-softPeriwinkle text-softPeriwinkle font-medium py-2.5 w-full inline-block rounded-lg">
+                                            Continue Case
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <!--? <<<<<<<<<<<<3>>>>>>>>>>> -->
+                                <div
+                                    class="relative border rounded-3xl flex flex-col overflow-hidden transition-all duration-500 hover:scale-105">
+                                    <img src="./assets/images/learning resources file/advanced-peripheral.webp"
+                                        alt="Advanced Peripheral Blood Smear Analysis" class="w-full h-48 object-cover">
+                                    <span
+                                        class="absolute top-2 left-2 bg-greenBlue text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                        Hematology
+                                    </span>
+                                    <div class="p-3 flex-1">
+                                        <div class="row justify-between ">
+                                            <h3 class="mb-2  mt-4">Iron Deficiency
+                                                Anemia</h3>
+                                            <span
+                                                class=" bg-lightPeriwinkle text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                                Beginner </span>
+                                        </div>
+                                        <p class="text-sm">Evaluate a 45-year-old patient presenting with fatigue and
+                                            pallor.…</p>
+                                    </div>
+                                    <div class="border-t border-lightPeriwinkle"></div>
+                                    <div class=" p-4">
+                                        <a
+                                            class="border text-center border-Primary bg-softPeriwinkle text-Primary font-medium py-2.5 w-full inline-block rounded-lg">
+                                            Start Case
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <!--? <<<<<<<<<<<<4>>>>>>>>>>> -->
+                                <div
+                                    class="relative border rounded-3xl flex flex-col overflow-hidden transition-all duration-500 hover:scale-105">
+                                    <img src="./assets/images/learning resources file/advanced-peripheral.webp"
+                                        alt="Advanced Peripheral Blood Smear Analysis" class="w-full h-48 object-cover">
+                                    <span
+                                        class="absolute top-2 left-2 bg-greenBlue text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                        Hematology
+                                    </span>
+                                    <div class="p-3 flex-1">
+                                        <div class="row justify-between ">
+                                            <h3 class="mb-2  mt-4">Iron Deficiency
+                                                Anemia</h3>
+                                            <span
+                                                class=" bg-lightPeriwinkle text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                                Beginner </span>
+                                        </div>
+                                        <p class="text-sm">Evaluate a 45-year-old patient presenting with fatigue and
+                                            pallor.…</p>
+                                    </div>
+                                    <div class="border-t border-lightPeriwinkle"></div>
+                                    <div class=" p-4">
+                                        <a
+                                            class="border text-center border-Primary bg-softPeriwinkle text-Primary font-medium py-2.5 w-full inline-block rounded-lg">
+                                            Start Case
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <!--? <<<<<<<<<<<<5>>>>>>>>>>> -->
+                                <div
+                                    class="relative border rounded-3xl flex flex-col overflow-hidden transition-all duration-500 hover:scale-105">
+                                    <img src="./assets/images/practice cases file/Acute .webp" alt="Acute Leukemia"
+                                        class="w-full h-48 object-cover">
+                                    <span
+                                        class="absolute top-2 left-2 bg-greenBlue text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                        Hematology
+                                    </span>
+                                    <div class="p-3 flex-1">
+                                        <div class="row justify-between ">
+                                            <h3 class="mb-2  mt-4">Acute Leukemia
+                                                Identification</h3>
+                                            <span
+                                                class=" bg-lightPeriwinkle text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                                Advanced </span>
+                                        </div>
+                                        <p class="text-sm">Analyze bone marrow morphology and
+                                            flow cytometry results to classify a…
+                                            suspected acute leukemia presentation.</p>
+                                    </div>
+                                    <div class="border-t border-lightPeriwinkle"></div>
+                                    <div class=" p-4">
+                                        <a
+                                            class="border text-center bg-Primary border-softPeriwinkle text-softPeriwinkle font-medium py-2.5 w-full inline-block rounded-lg">
+                                            Continue Case
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <!--? <<<<<<<<<<<<6>>>>>>>>>>> -->
+                                <div
+                                    class="relative border rounded-3xl flex flex-col overflow-hidden transition-all duration-500 hover:scale-105">
+                                    <img src="./assets/images/practice cases file/Acute .webp" alt="Acute Leukemia"
+                                        class="w-full h-48 object-cover">
+                                    <span
+                                        class="absolute top-2 left-2 bg-greenBlue text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                        Hematology
+                                    </span>
+                                    <div class="p-3 flex-1">
+                                        <div class="row justify-between ">
+                                            <h3 class="mb-2  mt-4">Acute Leukemia
+                                                Identification</h3>
+                                            <span
+                                                class=" bg-lightPeriwinkle text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                                Advanced </span>
+                                        </div>
+                                        <p class="text-sm">Analyze bone marrow morphology and
+                                            flow cytometry results to classify a…
+                                            suspected acute leukemia presentation.</p>
+                                    </div>
+                                    <div class="border-t border-lightPeriwinkle"></div>
+                                    <div class=" p-4">
+                                        <a
+                                            class="border text-center bg-Primary border-softPeriwinkle text-softPeriwinkle font-medium py-2.5 w-full inline-block rounded-lg">
+                                            Continue Case
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <!--? <<<<<<<<<<<<7>>>>>>>>>>> -->
+                                <div
+                                    class="relative border rounded-3xl flex flex-col overflow-hidden transition-all duration-500 hover:scale-105">
+                                    <img src="./assets/images/learning resources file/advanced-peripheral.webp"
+                                        alt="Advanced Peripheral Blood Smear Analysis" class="w-full h-48 object-cover">
+                                    <span
+                                        class="absolute top-2 left-2 bg-greenBlue text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                        Hematology
+                                    </span>
+                                    <div class="p-3 flex-1">
+                                        <div class="row justify-between ">
+                                            <h3 class="mb-2  mt-4">Iron Deficiency
+                                                Anemia</h3>
+                                            <span
+                                                class=" bg-lightPeriwinkle text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                                Beginner </span>
+                                        </div>
+                                        <p class="text-sm">Evaluate a 45-year-old patient presenting with fatigue and
+                                            pallor.…</p>
+                                    </div>
+                                    <div class="border-t border-lightPeriwinkle"></div>
+                                    <div class=" p-4">
+                                        <a
+                                            class="border text-center border-Primary bg-softPeriwinkle text-Primary font-medium py-2.5 w-full inline-block rounded-lg">
+                                            Start Case
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <!--? <<<<<<<<<<<<8>>>>>>>>>>> -->
+                                <div
+                                    class="relative border rounded-3xl flex flex-col overflow-hidden transition-all duration-500 hover:scale-105">
+                                    <img src="./assets/images/practice cases file/Acute .webp" alt="Acute Leukemia"
+                                        class="w-full h-48 object-cover">
+                                    <span
+                                        class="absolute top-2 left-2 bg-greenBlue text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                        Hematology
+                                    </span>
+                                    <div class="p-3 flex-1">
+                                        <div class="row justify-between ">
+                                            <h3 class="mb-2  mt-4">Acute Leukemia
+                                                Identification</h3>
+                                            <span
+                                                class=" bg-lightPeriwinkle text-black text-xs font-normal px-2 py-1 rounded-sm">
+                                                Advanced </span>
+                                        </div>
+                                        <p class="text-sm">Analyze bone marrow morphology and
+                                            flow cytometry results to classify a…
+                                            suspected acute leukemia presentation.</p>
+                                    </div>
+                                    <div class="border-t border-lightPeriwinkle"></div>
+                                    <div class=" p-4">
+                                        <a
+                                            class="border text-center bg-Primary border-softPeriwinkle text-softPeriwinkle font-medium py-2.5 w-full inline-block rounded-lg">
+                                            Continue Case
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--? End Filter Section -->
+    </main>
+    <!--? End Main Section -->
+    <!--? Start Footer Section -->
+    <footer class="footer py-24 bg-darkblue">
+        <div class="container">
+            <div class="grid-response gap-6">
+                <!--? <<<<<<<<<<<<1>>>>>>>>>>> -->
+                <div class="w-full   ">
+                    <h3 class="text-lightPeriwinkle mb-4 text-4xl">LabVerse</h3>
+                    <p class="text-lightPeriwinkle text-xl font-normal md:text-2xl xl:text-sm  ">© 2024 LabVerse Medical
+                        Education.
+                        All rights reserved.</p>
+                </div>
+                <!--? <<<<<<<<<<<<2>>>>>>>>>>> -->
+                <div class="hidden xl:block">
+                    <ul class="gap-4 row flex-col">
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Hematology</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Microbiology</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Clinical
+                                Chemistry</a></li>
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Immunology</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--? <<<<<<<<<<<<3>>>>>>>>>>> -->
+                <div class="hidden xl:block">
+                    <ul class="gap-4 row flex-col">
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Student
+                                Dashboard</a></li>
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Faculty
+                                Portal</a></li>
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Institutional
+                                Access</a></li>
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Academic
+                                Partners</a></li>
+                    </ul>
+                </div>
+                <!--? <<<<<<<<<<<<4>>>>>>>>>>> -->
+                <div class="hidden xl:block">
+                    <ul class="gap-4 row flex-col">
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Terms
+                                of Service</a></li>
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Privacy
+                                Policy</a></li>
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Contact
+                                Support</a></li>
+                        <li><a href="#"
+                                class="text-lightPeriwinkle font-normal hover:text-Secondary hover:underline hover:underline-offset-4 hover:decoration-2 transition-all duration-700">Help
+                                Center</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--? End Footer Section -->
 </body>
+
 </html>
